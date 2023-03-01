@@ -1,5 +1,17 @@
-import datetime as dt
+import datetime, random as rn
+import sys
+import webbrowser as wb
+import countVowels
 
-cur_time = dt.datetime.now()
+# print(f"Today's date is {datetime.date.today()}")
 
-print(f"The current time is {cur_time}.")
+# print("Random number is", rn.randint(1,10))
+
+# wb.open("https://www.google.com")
+
+name = input("Enter a name:\n")
+
+print("The number of vowels are", countVowels.countVow(name))
+
+# print("\n")
+# print(sys.path)
